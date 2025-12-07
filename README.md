@@ -43,16 +43,15 @@ src/
   └── assets/         # Images and logos
 ```
 
-## Features Migrated
+## Features 
 
 - ✅ Card management (add, view cards)
 - ✅ Card carousel with navigation
 - ✅ Card tabs (My debit cards, All company cards)
 - ✅ Card actions (Freeze, Set spend limit, etc.)
 - ✅ Recent transactions accordion
-- ✅ Responsive design (mobile and desktop)
+- ✅ Responsive design
 - ✅ Drawer navigation
-- ✅ All original styling and design
 
 ## Technologies
 
