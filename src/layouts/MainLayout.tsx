@@ -15,7 +15,7 @@ const linksList = [
 ];
 
 function MainLayout() {
-  const [leftDrawerOpen, setLeftDrawerOpen] = useState(false);
+  const [leftDrawerOpen, _setLeftDrawerOpen] = useState(false);
 
   return (
     <div className="q-layout">
