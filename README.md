@@ -1,5 +1,7 @@
 # Aspire Assignment
 
+Please check this app at `https://aspire-assignment-7zm0tyoom-himanshus-projects-6afc2ced.vercel.app/`
+
 
 ## Features
 
@@ -20,8 +22,6 @@ npm install
 ```bash
 npm run dev
 ```
-
-The app will be available at `http://localhost:3000`
 
 ## Build
 
