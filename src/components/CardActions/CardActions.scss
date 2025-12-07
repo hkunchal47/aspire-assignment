@@ -1,0 +1,40 @@
+@import '../../styles/styleguide/headings';
+@import '../../styles/styleguide/fonts';
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #edf3ff;
+  padding: 20px 27px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  height: 116px;
+  @media screen and (min-width: 768px) {
+    border-radius: 16px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    @include opensans-regular;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #0c365a;
+    .icon {
+      font-size: 32px;
+      margin-bottom: 7px;
+      font-style: normal;
+      display: inline-block;
+    }
+    .icon--white {
+      color: #ffff;
+    }
+  }
+}
+

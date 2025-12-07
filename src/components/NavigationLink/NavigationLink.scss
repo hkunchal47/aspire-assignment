@@ -1,0 +1,27 @@
+.q-item {
+  font-size: 16px;
+  padding: 8px 0;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  
+  &:hover {
+    color: #01d167;
+    .q-icon,
+    i {
+      color: #01d167;
+    }
+  }
+  
+  &__section--avatar {
+    min-width: auto;
+    margin-right: 12px;
+  }
+  
+  &:nth-child(2) {
+    color: #01d167;
+  }
+}
+

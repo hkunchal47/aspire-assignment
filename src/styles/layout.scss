@@ -1,0 +1,53 @@
+$secondary: #0c365a;
+$colorWhite: #ffff;
+
+.q-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.q-drawer {
+  background: $secondary;
+  color: $colorWhite;
+  width: 340px;
+  min-height: 100vh;
+  padding: 48px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  
+  @media screen and (max-width: 1024px) {
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    
+    &.open {
+      transform: translateX(0);
+    }
+  }
+  
+  &__content {
+    padding: 0;
+  }
+  
+  &__header-logo {
+    margin-bottom: 19px;
+  }
+  
+  &__header-label {
+    margin-bottom: 81px;
+    opacity: 0.3;
+    line-height: 1.4;
+    font-size: 14px;
+  }
+}
+
+.q-page-container {
+  flex: 1;
+  margin-left: 340px;
+  
+  @media screen and (max-width: 1024px) {
+    margin-left: 0;
+  }
+}
+

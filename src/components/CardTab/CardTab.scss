@@ -1,0 +1,113 @@
+@import '../../styles/styleguide/headings';
+@import '../../styles/styleguide/fonts';
+
+.card-tabs {
+  &__row {
+    display: flex;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+  &__bg-blue {
+    @media screen and (max-width: 767px) {
+      background: #0c365a;
+    }
+  }
+  &__wrapper {
+    @media screen and (max-width: 767px) {
+      background: #0c365a;
+    }
+  }
+}
+
+.q-card {
+  border-radius: 8px;
+  box-shadow: none;
+  filter: drop-shadow(0 2px 12px #00000014);
+  background: white;
+}
+
+.q-tab-panel {
+  padding-top: 0px;
+  padding-bottom: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.q-tab {
+  flex: 0 0 auto;
+  padding: 0;
+  margin-right: 32px;
+  margin-bottom: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  min-height: 34px;
+  
+  &__label {
+    @include heading-semibold;
+    text-transform: initial;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.2;
+    @media screen and (min-width: 768px) {
+      color: rgba(34, 34, 34, 0.3);
+    }
+  }
+  
+  &--active {
+    .q-tab__label {
+      @include heading-semibold;
+      font-weight: 600;
+      color: #fff;
+      @media screen and (min-width: 768px) {
+        color: rgba(34, 34, 34, 1);
+      }
+    }
+  }
+  
+  .q-focus-helper {
+    display: none;
+  }
+  
+  &__indicator {
+    border: 1px solid #23cefd;
+  }
+}
+
+.q-tabs {
+  display: flex;
+  padding-left: 24px;
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+  }
+}
+
+.col-px {
+  padding-left: 0px;
+  padding-right: 0px;
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+}
+
+.text-h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+

@@ -1,0 +1,25 @@
+$openSans: 'Open Sans', sans-serif;
+
+@mixin opensans-regular {
+  font-family: $openSans;
+  font-weight: 400;
+}
+
+@mixin heading-regular {
+  @include opensans-regular;
+  font-size: 14px;
+  line-height: 18;
+}
+
+@mixin heading-bold {
+  font-family: $openSans;
+  font-weight: 700;
+}
+
+@mixin heading-semibold {
+  font-family: $openSans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}
+

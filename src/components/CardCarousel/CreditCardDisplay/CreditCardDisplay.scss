@@ -1,0 +1,96 @@
+@import '../../../styles/styleguide/headings';
+@import '../../../styles/styleguide/fonts';
+
+.card {
+  width: 100%;
+  height: 248px;
+  border-radius: 16px;
+  padding: 27px;
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 27px;
+    i {
+      color: #fff;
+      font-size: 30px;
+      width: auto;
+      display: inline-block;
+      font-style: normal;
+    }
+  }
+
+  &__holder-name {
+    @include heading-bold;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.58px;
+    color: #fff;
+    margin-bottom: 27px;
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    @include heading-bold;
+    font-size: 14px;
+    letter-spacing: 3.46px;
+    margin-bottom: 18px;
+  }
+  
+  &__number-hidden {
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 6px;
+      &:nth-child(4n) {
+        margin-right: 27px;
+      }
+
+      &.hidden-digit {
+        width: 9px;
+        height: 9px;
+        background: #fff;
+        border-radius: 50%;
+        font-size: 0;
+      }
+    }
+  }
+  
+  &__meta {
+    display: flex;
+    @include heading-bold;
+    color: #fff;
+    align-items: center;
+    margin-bottom: 9px;
+    .label {
+      margin-right: 4px;
+    }
+  }
+  
+  &__validity {
+    display: flex;
+    margin-right: 36px;
+  }
+  
+  &__cvv {
+    display: flex;
+  }
+  
+  &__provider {
+    display: flex;
+    justify-content: flex-end;
+    i {
+      color: #fff;
+      font-size: 26px;
+      width: auto;
+      display: inline-block;
+      font-style: normal;
+    }
+  }
+}
+

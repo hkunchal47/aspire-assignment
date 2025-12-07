@@ -1,0 +1,12 @@
+@import 'layout/base';
+@import 'styleguide/headings';
+@import 'styleguide/fonts';
+@import 'styleguide/icons';
+
+// Global icon styles
+[class^='icon-'],
+[class*=' icon-'] {
+  font-style: normal;
+  display: inline-block;
+}
+

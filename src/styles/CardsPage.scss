@@ -1,0 +1,125 @@
+@import 'styleguide/headings';
+@import 'styleguide/fonts';
+
+.cards {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 60px 90px;
+  }
+
+  &__blance {
+    padding-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      background: #0c365a;
+      padding-top: 30px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+  &__blance-label {
+    @include opensans-regular;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 12px;
+    letter-spacing: 0;
+    @media screen and (min-width: 768px) {
+      color: #222222;
+    }
+  }
+
+  &__blance-amount {
+    @include heading-bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+
+    .blance-amount {
+      display: flex;
+      align-items: center;
+      @include heading-bold;
+      font-size: 26px;
+      line-height: 1.2;
+      color: #fff;
+      white-space: nowrap;
+      @media screen and (min-width: 768px) {
+        color: #222222;
+      }
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 24px;
+      background: #01d167;
+      color: #ffffff;
+      border-radius: 4px;
+      margin-right: 8px;
+      @include heading-bold;
+      font-size: 13px;
+      line-height: 1;
+    }
+  }
+
+  .q-btn {
+    @include heading-bold;
+    font-size: 13px;
+    color: #23cefd;
+    text-transform: initial;
+    min-width: 109px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    @media screen and (min-width: 768px) {
+      color: #fff;
+      background: #325baf;
+      padding: 8px 16px;
+    }
+
+    @media screen and (max-width: 767px) {
+      background: transparent;
+      padding: 4px 8px;
+    }
+
+    i {
+      color: #325baf;
+      font-size: 16px;
+      font-style: normal;
+      display: inline-block;
+      @media screen and (min-width: 768px) {
+        color: #fff;
+      }
+    }
+    
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.q-btn {
+  i {
+    margin-right: 6px;
+    font-size: 16px;
+  }
+}
+.q-dialog {
+  .q-card {
+    width: 400px;
+  }
+}
+
