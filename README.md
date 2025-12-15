@@ -1,6 +1,6 @@
 # Aspire Assignment
 
-Please check this app at https://aspire-assignment-7zm0tyoom-himanshus-projects-6afc2ced.vercel.app/
+Please check this app at https://aspire-assignment-woad.vercel.app/
 
 
 ## Features
